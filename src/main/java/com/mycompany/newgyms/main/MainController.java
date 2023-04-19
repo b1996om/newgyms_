@@ -36,8 +36,8 @@ public class MainController extends BaseController {
 		session.setAttribute("side_menu", "user");
 		
 		Map sortMap = new HashMap();
-		sortMap.put("product_sort", "ÀüÃ¼º¸±â");
-		sortMap.put("address", "´ëÀü");
+		sortMap.put("product_sort", "ì „ì²´ë³´ê¸°");
+		sortMap.put("address", "Â´Ã«Ã€Ã¼");
 
 		List<ProductVO> productList=productService.productList(sortMap);
 		mav.addObject("productList", productList);
