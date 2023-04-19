@@ -37,7 +37,7 @@ public class MainController extends BaseController {
 		
 		Map sortMap = new HashMap();
 		sortMap.put("product_sort", "전체보기");
-		sortMap.put("address", "´ëÀü");
+		sortMap.put("address", "대전");
 
 		List<ProductVO> productList=productService.productList(sortMap);
 		mav.addObject("productList", productList);
