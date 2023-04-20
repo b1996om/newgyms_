@@ -52,9 +52,9 @@ public class AdminQnaDAOImpl implements AdminQnaDAO  {
 		int CountAnswer = selectCountAnswer(qnaVO);
 		System.out.println(CountAnswer);
 		if (CountAnswer == 0) {
-			qnaVO.setQna_answer_state("´äº¯´ë±â");
+			qnaVO.setQna_answer_state("ë‹µë³€ëŒ€ê¸°");
 		} else {
-			qnaVO.setQna_answer_state("´äº¯¿Ï·á");
+			qnaVO.setQna_answer_state("ë‹µë³€ì™„ë£Œ");
 		}
 		sqlSession.update("mapper.admin_qna.updateAnswerState", qnaVO);
 
